@@ -1,0 +1,70 @@
+@use "../base/" as *;
+.home-page{
+header {
+  background-color: $color-first;
+  color: $second-color;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: #fff;
+  nav {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    .icoon{
+        margin-left: -45px;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .knopka {
+        background-color: transparent;
+        color: black;
+        border: none;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 32px;
+        transition: 0.6;
+        &:hover {
+          color: rgba(23, 22, 22, 0.588);
+        }
+      }
+      .Mentor {
+        text-decoration: none;
+        color: #1c3554;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 32px;
+      }
+      button {
+        outline: none;
+        padding: 8px 32px;
+        border-radius: 8px;
+        border: 1px solid var(--text-tittle, #1c3554);
+        color: var(--text-tittle, #1c3554);
+        font-weight: 400;
+        line-height: 32px;
+        background-color: transparent;
+        transition: 0.2s;
+        
+
+        &:hover {
+          background: var(--primary-pink, #f72585);
+          color: var(--other-white, #fff);
+          // border: transparent;
+        }
+      }
+      .buttons {
+        display: flex;
+        column-gap: 16px;
+      }
+      .anput {
+        width: 443px;
+        height: 48px;
+      }
+    }
+  }
+}
+}
